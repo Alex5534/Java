@@ -1,0 +1,24 @@
+A).Divide your screen into four regions,draw,circle,rectangle,ellipse and half ellipse in each 
+region with appropriate message
+#include<graphics.h>
+#include<conio.h>
+main(){
+int gd=DETECT, gm;
+int points[12]={350,450,350,410,430,400,350,350,300,430,350,450};
+initgraph(&gd,&gm,"C:\\TC\\BGI");
+circle(100,100,50);
+outtextxy(75,150,"circle");
+rectangle(200,50,350,140);
+outtextxy(240,150,"rectangle");
+ellipse(500,100,0,360,100,50);
+outtextxy(480,150,"ellipse");
+line(100,250,540,250);
+outtextxy(300,260,"line");
+sector(150,400,30,300,100,50);
+outtextxy(120,460,"sector");
+drawpoly(6,points);
+outtextxy(340,460,"polygon");
+getch();
+closegraph();
+return 0;
+}
