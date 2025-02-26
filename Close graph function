@@ -1,0 +1,23 @@
+C)CLOSEGRAPH FUNCTION IN C
+
+//C.CLOSEGRAPH FUNCTION IN C
+
+#include<graphics.h>
+
+#include<conio.h>
+
+main(){
+
+int gd=DETECT,gm;
+
+initgraph(&gd,&gm,"C:\\TC\\BGI");
+
+outtext("press any key to close the graph");
+
+getch();
+
+closegraph();
+
+return 0;
+
+}
